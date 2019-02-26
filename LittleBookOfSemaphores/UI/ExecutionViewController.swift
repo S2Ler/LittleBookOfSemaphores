@@ -1,11 +1,3 @@
-//
-//  ExecutionViewController.swift
-//  LittleBookOfSemaphores
-//
-//  Created by Alexander Belyavskiy on 11/30/16.
-//  Copyright © 2016 Alexander Belyavskiy. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -20,9 +12,8 @@ final class ExecutionViewController: UIViewController {
   }
 
   private func execute(_ task: Task) {
-    UIApplication.shared.beginIgnoringInteractionEvents()
-    task.perform(display: textView, completionQueue: .main) {
-      UIApplication.shared.endIgnoringInteractionEvents()
+    DispatchQueue.global().async {
+        task.perform(display: self.textView)
     }
   }
 }

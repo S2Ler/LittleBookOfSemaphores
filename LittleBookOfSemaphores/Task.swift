@@ -11,7 +11,7 @@ import Foundation
 protocol Task {
   init()
   var name: String { get }
-  func perform(display: Display, completionQueue: DispatchQueue, completion: @escaping () -> Void)
+  func perform(display: Display)
 }
 
 protocol Display {
@@ -25,5 +25,6 @@ final class ConsoleDisplay: Display {
 }
 
 internal let taskTypes: [Task.Type] = [
-  Task1.self,
+  RendezvousTask.self,
+  TurnstileTask.self,
 ]

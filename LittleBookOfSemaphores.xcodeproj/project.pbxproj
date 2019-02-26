@@ -15,8 +15,10 @@
 		097EFB511DEE9CB900F9FFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097EFB4F1DEE9CB900F9FFC6 /* LaunchScreen.storyboard */; };
 		097EFB651DEE9D3800F9FFC6 /* SemaphorToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097EFB5E1DEE9D3700F9FFC6 /* SemaphorToolkit.framework */; };
 		097EFB661DEE9D3800F9FFC6 /* SemaphorToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097EFB5E1DEE9D3700F9FFC6 /* SemaphorToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		097EFB6E1DEE9DA800F9FFC6 /* Task1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6D1DEE9DA800F9FFC6 /* Task1.swift */; };
+		097EFB6E1DEE9DA800F9FFC6 /* RendezvousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */; };
 		097EFB701DEE9DB900F9FFC6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6F1DEE9DB900F9FFC6 /* Task.swift */; };
+		09BF1EA5222427F300577FEE /* TurnstileTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA4222427F300577FEE /* TurnstileTask.swift */; };
+		09BF1EA82224293D00577FEE /* Int+Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA72224293D00577FEE /* Int+Times.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,10 @@
 		097EFB521DEE9CB900F9FFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		097EFB5E1DEE9D3700F9FFC6 /* SemaphorToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SemaphorToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		097EFB611DEE9D3800F9FFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		097EFB6D1DEE9DA800F9FFC6 /* Task1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task1.swift; sourceTree = "<group>"; };
+		097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RendezvousTask.swift; sourceTree = "<group>"; };
 		097EFB6F1DEE9DB900F9FFC6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		09BF1EA4222427F300577FEE /* TurnstileTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnstileTask.swift; sourceTree = "<group>"; };
+		09BF1EA72224293D00577FEE /* Int+Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Times.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		097EFB451DEE9CB900F9FFC6 /* LittleBookOfSemaphores */ = {
 			isa = PBXGroup;
 			children = (
+				09BF1EA62224293000577FEE /* Utils */,
 				099D676022232CBC00BF70CD /* UI */,
 				097EFB581DEE9CCD00F9FFC6 /* Tasks */,
 				097EFB6F1DEE9DB900F9FFC6 /* Task.swift */,
@@ -109,7 +114,8 @@
 		097EFB581DEE9CCD00F9FFC6 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				097EFB6D1DEE9DA800F9FFC6 /* Task1.swift */,
+				097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */,
+				09BF1EA4222427F300577FEE /* TurnstileTask.swift */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -141,6 +147,14 @@
 				097EFB521DEE9CB900F9FFC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09BF1EA62224293000577FEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09BF1EA72224293D00577FEE /* Int+Times.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +219,7 @@
 				TargetAttributes = {
 					097EFB421DEE9CB900F9FFC6 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					097EFB5D1DEE9D3700F9FFC6 = {
@@ -259,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BF1EA5222427F300577FEE /* TurnstileTask.swift in Sources */,
 				097EFB701DEE9DB900F9FFC6 /* Task.swift in Sources */,
-				097EFB6E1DEE9DA800F9FFC6 /* Task1.swift in Sources */,
+				097EFB6E1DEE9DA800F9FFC6 /* RendezvousTask.swift in Sources */,
 				097EFB491DEE9CB900F9FFC6 /* TasksList.swift in Sources */,
+				09BF1EA82224293D00577FEE /* Int+Times.swift in Sources */,
 				097EFB471DEE9CB900F9FFC6 /* AppDelegate.swift in Sources */,
 				0926B6141DEEA43B00540DF1 /* ExecutionViewController.swift in Sources */,
 			);
@@ -421,7 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.diejmon.LittleBookOfSemaphores;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -433,7 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.diejmon.LittleBookOfSemaphores;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

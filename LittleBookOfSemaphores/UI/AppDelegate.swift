@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  LittleBookOfSemaphores
-//
-//  Created by Alexander Belyavskiy on 11/30/16.
-//  Copyright © 2016 Alexander Belyavskiy. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

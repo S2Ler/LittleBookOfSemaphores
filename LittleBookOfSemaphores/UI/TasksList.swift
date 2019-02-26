@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  LittleBookOfSemaphores
-//
-//  Created by Alexander Belyavskiy on 11/30/16.
-//  Copyright © 2016 Alexander Belyavskiy. All rights reserved.
-//
-
 import UIKit
 
 class TasksList: UITableViewController {
@@ -59,7 +51,7 @@ extension UITextView: Display {
       newText.append("\(string)\n")
       self.text = newText
     } else {
-      DispatchQueue.main.async {
+      DispatchQueue.main.sync {
         self.show(string)
       }
     }
