@@ -18,7 +18,10 @@
 		097EFB6E1DEE9DA800F9FFC6 /* RendezvousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */; };
 		097EFB701DEE9DB900F9FFC6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6F1DEE9DB900F9FFC6 /* Task.swift */; };
 		09BF1EA5222427F300577FEE /* TurnstileTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA4222427F300577FEE /* TurnstileTask.swift */; };
-		09BF1EA82224293D00577FEE /* Int+Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA72224293D00577FEE /* Int+Times.swift */; };
+		09D94818222D855F003ADB61 /* BarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D94817222D855F003ADB61 /* BarrierTask.swift */; };
+		09D9481A222D8570003ADB61 /* Barrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D94819222D8570003ADB61 /* Barrier.swift */; };
+		09D9481B222D8612003ADB61 /* DispatchSemaphore+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C12BC1222D8224007CFA81 /* DispatchSemaphore+Extensions.swift */; };
+		09D9481C222D861F003ADB61 /* Int+Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA72224293D00577FEE /* Int+Times.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		097EFB6F1DEE9DB900F9FFC6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		09BF1EA4222427F300577FEE /* TurnstileTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnstileTask.swift; sourceTree = "<group>"; };
 		09BF1EA72224293D00577FEE /* Int+Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Times.swift"; sourceTree = "<group>"; };
+		09C12BC1222D8224007CFA81 /* DispatchSemaphore+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchSemaphore+Extensions.swift"; sourceTree = "<group>"; };
+		09D94817222D855F003ADB61 /* BarrierTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierTask.swift; sourceTree = "<group>"; };
+		09D94819222D8570003ADB61 /* Barrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barrier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 			children = (
 				097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */,
 				09BF1EA4222427F300577FEE /* TurnstileTask.swift */,
+				09D94817222D855F003ADB61 /* BarrierTask.swift */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -123,7 +130,10 @@
 		097EFB5F1DEE9D3800F9FFC6 /* SemaphorToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				09BF1EA72224293D00577FEE /* Int+Times.swift */,
+				09C12BC1222D8224007CFA81 /* DispatchSemaphore+Extensions.swift */,
 				097EFB611DEE9D3800F9FFC6 /* Info.plist */,
+				09D94819222D8570003ADB61 /* Barrier.swift */,
 			);
 			path = SemaphorToolkit;
 			sourceTree = "<group>";
@@ -152,7 +162,6 @@
 		09BF1EA62224293000577FEE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				09BF1EA72224293D00577FEE /* Int+Times.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -224,7 +233,7 @@
 					};
 					097EFB5D1DEE9D3700F9FFC6 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -277,9 +286,9 @@
 				097EFB701DEE9DB900F9FFC6 /* Task.swift in Sources */,
 				097EFB6E1DEE9DA800F9FFC6 /* RendezvousTask.swift in Sources */,
 				097EFB491DEE9CB900F9FFC6 /* TasksList.swift in Sources */,
-				09BF1EA82224293D00577FEE /* Int+Times.swift in Sources */,
 				097EFB471DEE9CB900F9FFC6 /* AppDelegate.swift in Sources */,
 				0926B6141DEEA43B00540DF1 /* ExecutionViewController.swift in Sources */,
+				09D94818222D855F003ADB61 /* BarrierTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D9481C222D861F003ADB61 /* Int+Times.swift in Sources */,
+				09D9481B222D8612003ADB61 /* DispatchSemaphore+Extensions.swift in Sources */,
+				09D9481A222D8570003ADB61 /* Barrier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +444,7 @@
 		097EFB561DEE9CB900F9FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LittleBookOfSemaphores/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -444,6 +457,7 @@
 		097EFB571DEE9CB900F9FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LittleBookOfSemaphores/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -470,7 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -493,7 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diejmon.SemaphorToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -27,4 +27,5 @@ final class ConsoleDisplay: Display {
 internal let taskTypes: [Task.Type] = [
   RendezvousTask.self,
   TurnstileTask.self,
+  BarrierTask.self,
 ]
