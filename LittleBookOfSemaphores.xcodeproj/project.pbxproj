@@ -108,7 +108,6 @@
 		097EFB451DEE9CB900F9FFC6 /* LittleBookOfSemaphores */ = {
 			isa = PBXGroup;
 			children = (
-				09BF1EA62224293000577FEE /* Utils */,
 				099D676022232CBC00BF70CD /* UI */,
 				097EFB581DEE9CCD00F9FFC6 /* Tasks */,
 				097EFB6F1DEE9DB900F9FFC6 /* Task.swift */,
@@ -157,13 +156,6 @@
 				097EFB521DEE9CB900F9FFC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		09BF1EA62224293000577FEE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
