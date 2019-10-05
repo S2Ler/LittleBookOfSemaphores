@@ -17,6 +17,8 @@
 		097EFB661DEE9D3800F9FFC6 /* SemaphorToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097EFB5E1DEE9D3700F9FFC6 /* SemaphorToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		097EFB6E1DEE9DA800F9FFC6 /* RendezvousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */; };
 		097EFB701DEE9DB900F9FFC6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EFB6F1DEE9DB900F9FFC6 /* Task.swift */; };
+		09A0B48723491C4B0051D390 /* Lightswitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A0B48623491C4B0051D390 /* Lightswitch.swift */; };
+		09A0B48923491D610051D390 /* ReadersWritters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A0B48823491D610051D390 /* ReadersWritters.swift */; };
 		09BF1EA5222427F300577FEE /* TurnstileTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA4222427F300577FEE /* TurnstileTask.swift */; };
 		09D94818222D855F003ADB61 /* BarrierTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D94817222D855F003ADB61 /* BarrierTask.swift */; };
 		09D9481A222D8570003ADB61 /* Barrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D94819222D8570003ADB61 /* Barrier.swift */; };
@@ -61,6 +63,8 @@
 		097EFB611DEE9D3800F9FFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RendezvousTask.swift; sourceTree = "<group>"; };
 		097EFB6F1DEE9DB900F9FFC6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		09A0B48623491C4B0051D390 /* Lightswitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lightswitch.swift; sourceTree = "<group>"; };
+		09A0B48823491D610051D390 /* ReadersWritters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadersWritters.swift; sourceTree = "<group>"; };
 		09BF1EA4222427F300577FEE /* TurnstileTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnstileTask.swift; sourceTree = "<group>"; };
 		09BF1EA72224293D00577FEE /* Int+Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Times.swift"; sourceTree = "<group>"; };
 		09C12BC1222D8224007CFA81 /* DispatchSemaphore+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchSemaphore+Extensions.swift"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				097EFB6D1DEE9DA800F9FFC6 /* RendezvousTask.swift */,
 				09BF1EA4222427F300577FEE /* TurnstileTask.swift */,
 				09D94817222D855F003ADB61 /* BarrierTask.swift */,
+				09A0B48823491D610051D390 /* ReadersWritters.swift */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				09C12BC1222D8224007CFA81 /* DispatchSemaphore+Extensions.swift */,
 				097EFB611DEE9D3800F9FFC6 /* Info.plist */,
 				09D94819222D8570003ADB61 /* Barrier.swift */,
+				09A0B48623491C4B0051D390 /* Lightswitch.swift */,
 			);
 			path = SemaphorToolkit;
 			sourceTree = "<group>";
@@ -215,7 +221,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Alexander Belyavskiy";
 				TargetAttributes = {
 					097EFB421DEE9CB900F9FFC6 = {
@@ -232,7 +238,7 @@
 			};
 			buildConfigurationList = 097EFB3E1DEE9CB900F9FFC6 /* Build configuration list for PBXProject "LittleBookOfSemaphores" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -276,6 +282,7 @@
 			files = (
 				09BF1EA5222427F300577FEE /* TurnstileTask.swift in Sources */,
 				097EFB701DEE9DB900F9FFC6 /* Task.swift in Sources */,
+				09A0B48923491D610051D390 /* ReadersWritters.swift in Sources */,
 				097EFB6E1DEE9DA800F9FFC6 /* RendezvousTask.swift in Sources */,
 				097EFB491DEE9CB900F9FFC6 /* TasksList.swift in Sources */,
 				097EFB471DEE9CB900F9FFC6 /* AppDelegate.swift in Sources */,
@@ -290,6 +297,7 @@
 			files = (
 				09D9481C222D861F003ADB61 /* Int+Times.swift in Sources */,
 				09D9481B222D8612003ADB61 /* DispatchSemaphore+Extensions.swift in Sources */,
+				09A0B48723491C4B0051D390 /* Lightswitch.swift in Sources */,
 				09D9481A222D8570003ADB61 /* Barrier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -386,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
