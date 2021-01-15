@@ -29,4 +29,5 @@ internal let taskTypes: [Task.Type] = [
   TurnstileTask.self,
   BarrierTask.self,
   ReadersWriters.self,
+  QueueTask.self,
 ]

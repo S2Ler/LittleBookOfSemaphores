@@ -1,4 +1,5 @@
 import Foundation
+import SemaphorToolkit
 
 final class TurnstileTask: Task {
     let name: String = "Turnstile"
@@ -6,9 +7,9 @@ final class TurnstileTask: Task {
     func perform(display: Display) {
         let numberOfThreads = 4
 
-        let turnstile = DispatchSemaphore(value: 0)
-        let turnstile2 = DispatchSemaphore(value: 1)
-        let countMutex = DispatchSemaphore(value: 1)
+        let turnstile = Sem(value: 0)
+        let turnstile2 = Sem(value: 1)
+        let countMutex = Sem(value: 1)
         var count: Int = 0
 
         for threadNumber in 1...numberOfThreads {

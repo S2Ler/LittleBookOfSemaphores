@@ -1,6 +1,8 @@
 import Foundation
 
-public extension DispatchSemaphore {
+public typealias Sem = DispatchSemaphore
+
+public extension Sem {
     func signal(nTimes n: Int) {
         n.times {
             self.signal()

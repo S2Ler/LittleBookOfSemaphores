@@ -7,7 +7,7 @@ final class ReadersWriters: Task {
 
   func perform(display: Display) {
     let readLightswitch = Lightswitch()
-    let roomEmpty = DispatchSemaphore(value: 1)
+    let roomEmpty = Sem(value: 1)
 
     for i in 0..<5 {
       sendReaders(readSwitch: readLightswitch, display, roomEmpty)
@@ -17,7 +17,7 @@ final class ReadersWriters: Task {
 
   private func sendReaders(readSwitch: Lightswitch,
                            _ display: Display,
-                           _ roomEmpty: DispatchSemaphore) {
+                           _ roomEmpty: Sem) {
     func sendOneReader(name: String) {
       display.show("--> Reader Arrived: \(name)")
       readSwitch.lock(roomEmpty)
@@ -35,7 +35,7 @@ final class ReadersWriters: Task {
     self.i += 5
   }
 
-  private func sendWriter(name: String, _ display: Display, _ roomEmpty: DispatchSemaphore) {
+  private func sendWriter(name: String, _ display: Display, _ roomEmpty: Sem) {
     display.show("--> Writer arrived: \(name)")
     roomEmpty.wait()
     display.show("Critical Writer: \(name)")

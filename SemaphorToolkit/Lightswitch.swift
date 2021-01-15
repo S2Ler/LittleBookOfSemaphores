@@ -2,13 +2,13 @@ import Foundation
 
 public class Lightswitch {
   private var counter: Int = 0
-  private let mutex = DispatchSemaphore(value: 1)
+  private let mutex = Sem(value: 1)
 
   public init() {
 
   }
 
-  public func lock(_ semaphore: DispatchSemaphore) {
+  public func lock(_ semaphore: Sem) {
     mutex.wait()
     counter += 1
     if counter == 1 {
@@ -17,7 +17,7 @@ public class Lightswitch {
     mutex.signal()
   }
 
-  public func unlock(_ semaphore: DispatchSemaphore) {
+  public func unlock(_ semaphore: Sem) {
     mutex.wait()
     counter -= 1
     if counter == 0 {

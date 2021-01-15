@@ -3,9 +3,9 @@ import Foundation
 public class Barrier {
     private let n: Int
     private var count: Int = 0
-    private let mutex = DispatchSemaphore(value: 1)
-    private let turnstile = DispatchSemaphore(value: 0)
-    private let turnstile2 = DispatchSemaphore(value: 1)
+    private let mutex = Sem(value: 1)
+    private let turnstile = Sem(value: 0)
+    private let turnstile2 = Sem(value: 1)
 
     public init(_ n: Int) {
         self.n = n
@@ -30,6 +30,7 @@ public class Barrier {
         mutex.signal()
         turnstile2.wait()
     }
+
     public func wait() {
         phase1()
         phase2()

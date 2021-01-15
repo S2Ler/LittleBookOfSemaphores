@@ -1,11 +1,13 @@
 import Foundation
+import SemaphorToolkit
 
+// 3.3 
 final class RendezvousTask: Task {
   var name: String { return "Rendezvous" }
   
   func perform(display: Display) {
-    let b1Done = DispatchSemaphore(value: 0)
-    let a1Done = DispatchSemaphore(value: 0)
+    let b1Done = Sem(value: 0)
+    let a1Done = Sem(value: 0)
 
     DispatchQueue.global().async {
         display.show("Statement a1")
