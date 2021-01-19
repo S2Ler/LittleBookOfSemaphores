@@ -31,4 +31,5 @@ internal let taskTypes: [Task.Type] = [
   ReadersWriters.self,
   Queue_3_8_Task.self,
   Queue_3_8_2_Task.self,
+  ProducerConsumerTask_4_1.self,
 ]

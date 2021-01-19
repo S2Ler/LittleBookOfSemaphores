@@ -26,6 +26,7 @@
 		09D9481C222D861F003ADB61 /* Int+Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1EA72224293D00577FEE /* Int+Times.swift */; };
 		AE5368BE25B2289D009C433F /* Queue_3.8.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5368BD25B2289D009C433F /* Queue_3.8.swift */; };
 		AE5368C125B22B22009C433F /* Queue_3.8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5368C025B22B22009C433F /* Queue_3.8.2.swift */; };
+		AED6839925B6A5E8006DFDA5 /* ProducerConsumer_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED6839825B6A5E8006DFDA5 /* ProducerConsumer_4_1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		09D94819222D8570003ADB61 /* Barrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barrier.swift; sourceTree = "<group>"; };
 		AE5368BD25B2289D009C433F /* Queue_3.8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue_3.8.swift; sourceTree = "<group>"; };
 		AE5368C025B22B22009C433F /* Queue_3.8.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue_3.8.2.swift; sourceTree = "<group>"; };
+		AED6839825B6A5E8006DFDA5 /* ProducerConsumer_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerConsumer_4_1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				09A0B48823491D610051D390 /* ReadersWritters.swift */,
 				AE5368BD25B2289D009C433F /* Queue_3.8.swift */,
 				AE5368C025B22B22009C433F /* Queue_3.8.2.swift */,
+				AED6839825B6A5E8006DFDA5 /* ProducerConsumer_4_1.swift */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				0926B6141DEEA43B00540DF1 /* ExecutionViewController.swift in Sources */,
 				09D94818222D855F003ADB61 /* BarrierTask.swift in Sources */,
 				AE5368C125B22B22009C433F /* Queue_3.8.2.swift in Sources */,
+				AED6839925B6A5E8006DFDA5 /* ProducerConsumer_4_1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
