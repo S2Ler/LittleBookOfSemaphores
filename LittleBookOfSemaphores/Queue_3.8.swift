@@ -2,8 +2,8 @@ import Foundation
 import SemaphorToolkit
 
 // 3.8
-final class QueueTask: Task {
-  let name: String = "Queue"
+final class Queue_3_8_Task: Task {
+  let name: String = "Queue 3.8"
   private let leader = Sem(value: 0)
   private let follower = Sem(value: 0)
 
